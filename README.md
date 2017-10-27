@@ -7,7 +7,10 @@ This is a current work in progress.
 ### simple\_vuln_scanner.py
 A simple scanner for common vulnerabilities.
 
-Usage: python simple\_vuln_scanner.py <vuln_list.txt>
+Usage: 
+`
+python simple\_vuln_scanner.py <vuln_list.txt>
+`
 
 vuln_list.txt can contain banner info like
 - "FreeFloat FTP Server"
