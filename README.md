@@ -4,6 +4,17 @@ A list of python hacking scripts I wrote with the guide of [this book](http://am
 This is a current work in progress.
 
 # List of Scripts and what they do:
+## crackers
+### unzip.py
+A simple zip-pw dictionary cracker.
+
+Usage:
+`
+python unzip.py -f <zipfile> -d <dictionary_file>
+`
+
+This script will crack a pw- protected zip file with a dictionary list. It will create a Thread for each dictionary_file line to speed up the process.
+
 ## scanners
 ### simple\_vuln_scanner.py
 A simple scanner for common vulnerabilities.
