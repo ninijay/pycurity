@@ -21,7 +21,7 @@ A simple scanner for common vulnerabilities.
 
 Usage: 
 `
-python simple\_vuln_scanner.py <vuln_list.txt>
+python simple_vuln_scanner.py <vuln_list.txt>
 `
 
 vuln_list.txt can contain banner info like
