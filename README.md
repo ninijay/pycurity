@@ -13,7 +13,7 @@ Usage:
 python unzip.py -f <zipfile> -d <dictionary_file>
 `
 
-This script will crack a pw- protected zip file with a dictionary list. It will create a Thread for each dictionary_file line to speed up the process.
+This script will crack a pw- protected zip file with a dictionary list. It will create a pseudo- Thread for each dictionary_file line to speed up the process.
 
 ## scanners
 ### simple\_vuln_scanner.py
