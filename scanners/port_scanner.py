@@ -22,15 +22,14 @@ def portScan(tgtHost, tgtPorts):
     setdefaulttimeout(1)
     for tgtPort in tgtPorts:
         print "Scanning port " + tgtPort
-        connScan(tgtHost, int(tgtPort))
+        connScan(tgtHost, int(tgtPort.strip()))
 def main():
-    parser = optparse.OptionParser(('usage %prog -H <target host> -p <target port(s) separated by comma>'))
+    parser = optparse.OptionParser(('usage %prog -H <target host> -p <target port(s) separated by space>'))
     parser.add_option("-H", dest="tgtHost", type="string", help="specify tarhet host")
-    parser.add_option("-p", dest="tgtPort", type="int", help="specify target port(s) separated by comma")
+    parser.add_option("-p", dest="tgtPort", type="string", help="specify target port(s) separated by space")
     (options, args) = parser.parse_args()
-    tgtHost = options.tgtHost
-    tgtPort = str(options.tgtPort)
-    tgtPorts = tgtPort.split(', ')
+    tgtHost = str(options.tgtHost).strip()
+    tgtPorts = [s.strip() for s in str(options.tgtPort).split(',')]
     if (tgtHost == None) | (tgtPorts[0] == None):
         print parser.usage
         exit(0)
