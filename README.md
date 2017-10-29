@@ -26,7 +26,7 @@ python port_scanner.py -H 123.32.32.03 -p "20, 21, 80, 443"
 ```
 
 ### nmap\_port_scanner.py
-Same as [port_scanner.py](#port_scanner.py) but with nmap integration.
+Same as [port_scanner.py](#port_scannerpy) but with nmap integration.
 
 ### simple\_vuln_scanner.py
 A simple scanner for common vulnerabilities.
