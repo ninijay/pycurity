@@ -44,6 +44,16 @@ as suggested by the book. Not limited to FTP- Services.
 
 Scans some ports in a range of IP- Adresses to get vulnerable services.
 
+## ssh
+
+### ssh_dictionary.py
+A simple brute-forcer for ssh connections, using a dictionary.
+
+Usage:
+```
+python ssh_dictionary.py -H <hostname> -u <username> -F <password- file>
+```
+Tries to brute- force an ssh connection for a given user using a dictionary.
 
 # Disclosure
 This Readme may contain affiliate marketing links, which means I may get paid commission on sales of those products or services we write about. My content is not influenced by advertisers or affiliate partnerships. This disclosure is provided in accordance with the Federal Trade Commission’s 16 CFR § 255.5: Guides Concerning the Use of Endorsements and Testimonials in Advertising.
