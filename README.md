@@ -3,6 +3,8 @@ A list of python hacking scripts I wrote with the guide of [this book](http://am
 
 This is a current work in progress.
 
+As soon as I've finished the book, I'll fork this project and create a more usefull pentesting-framework.
+
 # List of Scripts and what they do:
 ## crackers
 ### unzip.py
