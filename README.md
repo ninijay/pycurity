@@ -3,6 +3,8 @@ A list of python hacking scripts I wrote with the guide of [this book](http://am
 
 This is a current work in progress.
 
+I also have some PenTesting/ Hacking and Coding videos on my [YouTube Channel](https://www.youtube.com/channel/UCGISJ8ZHkmIv1CaoHovK-Xw) if you're into that.
+
 As soon as I've finished the book, I'll fork this project and create a more usefull pentesting-framework.
 
 # List of Scripts and what they do:
