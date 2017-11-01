@@ -17,6 +17,16 @@ python unzip.py -f <zipfile> -d <dictionary_file>
 
 This script will crack a pw- protected zip file with a dictionary list. It will create a pseudo- Thread for each dictionary_file line to speed up the process.
 
+## metasploit
+### conficker.py
+Clone of conficker exploit
+
+Usage:
+``` bash
+python -H <RHOST[s]> -l <LHOST> [-p <LPORT> -F <Password File>]
+```
+Simplifies the process of creating a conficker exploit by handling all the configuration and launching the exploit via msf.
+
 ## scanners
 ### port_scanner.py
 A port scanner for hostnames/ips and port(s)
