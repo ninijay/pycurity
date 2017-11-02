@@ -11,7 +11,7 @@ As soon as I've finished the book, I'll fork this project and create a more usef
 A simple zip-pw dictionary cracker.
 
 Usage:
-```
+``` bash
 python unzip.py -f <zipfile> -d <dictionary_file>
 ```
 
@@ -22,7 +22,7 @@ This script will crack a pw- protected zip file with a dictionary list. It will 
 A port scanner for hostnames/ips and port(s)
 
 Usage: 
-```
+``` bash
 python port_scanner.py -H <ip-adress> -p <single port>
 python port_scanner.py -H <ip-adress> -p "<mutliple ports separated by comma>"
 # eg for multiple port scan
@@ -36,7 +36,7 @@ Same as [port_scanner.py](#port_scannerpy) but with nmap integration.
 A simple scanner for common vulnerabilities.
 
 Usage: 
-```
+``` bash
 python simple_vuln_scanner.py <vuln_list.txt>
 ```
 
@@ -54,7 +54,7 @@ Scans some ports in a range of IP- Adresses to get vulnerable services.
 A simple brute-forcer for ssh connections, using a dictionary.
 
 Usage:
-```
+``` bash
 python ssh_dictionary.py -H <hostname> -u <username> -F <password- file>
 ```
 Tries to brute- force an ssh connection for a given user using a dictionary.
