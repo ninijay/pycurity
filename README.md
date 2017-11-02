@@ -23,8 +23,10 @@ A port scanner for hostnames/ips and port(s)
 
 Usage: 
 ```
-python port_scanner.py -H 124.03.31.22 -p 20
-python port_scanner.py -H 123.32.32.03 -p "20, 21, 80, 443"
+python port_scanner.py -H <ip-adress> -p <single port>
+python port_scanner.py -H <ip-adress> -p "<mutliple ports separated by comma>"
+# eg for multiple port scan
+python port_scanner.py -H 127.0.0.1 -p "20, 21, 443"
 ```
 
 ### nmap\_port_scanner.py
