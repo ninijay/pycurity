@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import optparse
 import sys
@@ -10,7 +11,7 @@ def findTgts(subNet):
         if nmScan[host].has_tcp(445):
             state = nmScan[host]['tcp'][445]['state']
             if state == 'open':
-                print '[+] Found Target Host: ' + host
+                print('[+] Found Target Host: ' + host)
                 tgtHosts.append(host)
     return tgtHosts
 def setupHandler(configFile, lhost, lport):
@@ -49,7 +50,7 @@ def main():
     parser.add_option('-F', dest='passwdFile', type='string', help='password file for SMB brute force attempt')
     (options, args) = parser.parse_args()
     if(options.tgtHost == None) | (options.lhost == None):
-        print parser.usage
+        print(parser.usage)
         exit(0)
     lhost = options.lhost
     lport = options.lport

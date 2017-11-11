@@ -1,10 +1,11 @@
+from __future__ import print_function
 import zipfile
 import optparse
 from threading import Thread
 def extractFile(zFile, password):
     try:
         zFile.extractall(pwd=password)
-        print '[+] Password = ' + password + "\n"
+        print('[+] Password = ' + password + "\n")
     except:
         pass
 def main():
@@ -13,7 +14,7 @@ def main():
     parser.add_option("-d", dest="dname", tpye="string", help="specify dictionary file")
     (options, args) = parser.parse_args()
     if (options.zname == None) | (options.dname == None):
-        print parser.usage
+        print(parser.usage)
         exit(0)
     else:
         zname = options.zname
